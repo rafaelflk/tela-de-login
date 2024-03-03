@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Infinity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .logo-infinity {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+		}
+
+        .login-container {
+            /* background-color: #fff; */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(252, 251, 251, 0.1);
+        }
+        .login-container h3 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #050000;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: #BA1D0A;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #BA1D0A;
+        }
+
+        .errorpassword {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo-infinity">       
+            <img src="https://cdn.eadplataforma.app/client/infinityschool/upload/others/e993f6d822d15efdb3585d1b733e4020.png">
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h3 class="submit-login">ENTRE COM A SUA CONTA</h3>
+        <form action="#" method="post">
+            <input type="email" name="e-mail" placeholder="E-mail" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <input type="submit" value="Entrar"> <br> <br>
+            
+
+            <div class="errorpassword">
+                <a href="#"> Esqueci minha senha.</a>
+            </div>
+        </form>
+
+    </div>
+        
+
+</body>
+</html>
